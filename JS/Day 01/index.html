@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="details.getFullName()">Click 1</button>
+    <script>
+        const details = {
+                fname: "John",
+                lname: "Kumar",
+                status: true, // boolean
+                age: 23, // number
+                city: "Jodhpur", //string
+                getFullName: function() {
+                    setTimeout(
+                        function() {
+                            // console.log(this)
+                            console.log(`The last name of ${this.fname} is ${this.lname}`) // ES6
+                        },
+                        2000
+                        // 2000 ms -> 2 sec
+                    )
+                    setTimeout(
+                        () => {
+                            // console.log(this)
+                            console.log(`The last name of ${this.fname} is ${this.lname}`) // ES6
+                        },
+                        2000
+                        // 2000 ms -> 2 sec
+                    )
+                }
+            }
+            // console.log(`The last name of ${this.fname} is ${this.lname}`)
+    </script>
+</body>
+
+</html>
