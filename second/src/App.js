@@ -16,6 +16,7 @@ const personData = [
 ]
 function App() {
   const [data, setData] = useState(personData) // init
+  const [toggle, setToggle] = useState(1) // 1 = show, 0 = hide
 
   const removeItem = (removeIndex) => {
     const newData = data.filter(
@@ -38,8 +39,9 @@ function App() {
   )
   return (
     <>
+      <button onClick={() => setToggle(!toggle)}>Show</button>
       <h1 style={{ textAlign: "center" }}>List of All Person</h1>
-      {PersonBox}
+      {toggle == 1 ? PersonBox : ""}
     </>
   );
 }

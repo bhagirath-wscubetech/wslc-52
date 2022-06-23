@@ -5,3 +5,27 @@
     box-shadow: 0px 0px 3px grey;
     margin: 15px auto;
 }
+
+.Age {
+    font-family: "cursive";
+}
+
+.Red {
+    color: red;
+}
+
+.Blue {
+    color: blue;
+}
+
+.Green {
+    color: green;
+}
+
+.Demo {
+    font-weight: bold;
+}
+
+.Highlight {
+    background-color: burlywood;
+}
